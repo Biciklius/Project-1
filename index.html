@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script src="app.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="style.css">
+      <meta charset="utf-8">
+      <title></title>
+      <script src="app.js" charset="utf-8"></script>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body>
-    <div class="grid"></div>
+      <audio src="sound/tql.wav"></audio>
+      <audio  class="backMusic" src="sound/backMusic.wav"></audio>
+      <div class="wrapper">
+      <div class="title"><img src="images/stormtrooperslogo.png" alt="">DARK SIDE OF    THE BEACH</div>
+      <div class="playField">
+          <div class="leftSide">
+              <div class="field"> <span>HIGH SCORE </span></div>
+              <div class="field soundButton"> <i class="fas fa-volume-up"> </i></div>
+              <div class="field"> <span>SCORE: </span><span class="score"></span></div>
+              <div class="field"> <span class="instructions">INSTRUCTIONS</span></div>
+              <div class="rstbtn field " ><span class="resetBtn">PLAY</span></div>
+          </div>
+
+      <div class="rightSide">
+        <div class="grid"></div>
+      </div>
+      </div>
+    </div>
   </body>
 </html>
