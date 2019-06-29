@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () =>{
   const soundButton = document.querySelector('.soundButton')
   const volumeIcon = soundButton.querySelector('i')
   let newSnakeSpeed = snakeSpeed
-  let currentStep = 0
+
   let snake = []
   let direction
   let appleSquare
@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () =>{
   })
 
   function createGrid(){
-    grid.innerHTML = ''
     for(let i = 0; i < width * width; i++) {
       const square = document.createElement('div')
       squares.push(square)
@@ -57,11 +56,6 @@ document.addEventListener('DOMContentLoaded', () =>{
   function drawSnakeInit() {
     snake.forEach(index => squares[index].classList.add('snake'))
     squares[snake[0]].classList.add('snakeHead')
-    squares[snake[0]].setAttribute('data-direction', direction)
-    squares[snake[0]].setAttribute('data-step', currentStep)
-
-
-
     console.log('draw')
   }
   function updateSnake(snakeItem) {
@@ -190,9 +184,9 @@ document.addEventListener('DOMContentLoaded', () =>{
     backMusic.play()
     backMusic.loop = true
     grid.classList.add('.grid')
-    squares.forEach(square => {
-      square.style.border = '1px solid gray'
-    })
+    // squares.forEach(square => {
+    //   square.style.border = '1px solid gray'
+    // })
     grid.style.backgroundImage = ''
     snake = [140,141,142,143]
     direction = 'left'
@@ -239,17 +233,5 @@ document.addEventListener('DOMContentLoaded', () =>{
 
   createGrid()
   homeScreen()
-// ------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
 
 })

@@ -4,7 +4,6 @@
 
 body {
 
-  display: flex;
   height: 100vh;
   font-family: 'Slackey', cursive;
   margin: 0;
@@ -17,15 +16,12 @@ body {
 .wrapper{
   height: 100%;
   display:flex;
-  flex-direction:row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-around;
 
 }
 .title{
   display:flex;
-  height:200px;
   font-size: 75px;
   align-items: center;
 
@@ -37,16 +33,11 @@ body {
   width:600px;
   justify-content: space-around;
   height: 600px;
-  align-items: flex-start;
 
-}
-.rightSide{
-  position: relative;
+
 }
 .playField{
   display: flex;
-  width:1200px;
-  justify-content: space-around;
 
 }
 
@@ -63,8 +54,6 @@ body {
   border: 15px;
   background-image: ;
   background:cover;
-  -webkit-box-shadow: 10px 10px 84px 0px rgba(0,0,0,0.87);
-  -moz-box-shadow: 10px 10px 84px 0px rgba(0,0,0,0.87);
   box-shadow: 10px 10px 84px 0px rgba(0,0,0,0.87);
 
 }
@@ -73,8 +62,6 @@ body {
   flex-grow: 1;
   height: 40px;
   width: 40px;
-  /* border:1px solid gray; */
-
 }
 .snake{
   background-image: url('https://media.giphy.com/media/jL7cmBKJqnyG4/giphy.gif');
@@ -83,16 +70,14 @@ body {
 .apple{
   background-image:url('images/tequila.png');
   background-size: cover;
+  background-color: #49CFAC
 }
  .score {
   width: 100px;
 }
 
 .snakeHead{
-  background-image: url('images/sprites.png');
-  background-size: 1300%;
-  background-position-x: -5px;
-  background-position-y: -250px;
+    background-image: url('images/Untitled-3.png');
   }
 .rstbtn{
   text-align:right;
